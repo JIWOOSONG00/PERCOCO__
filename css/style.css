@@ -1,0 +1,403 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    
+    
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 상단바 */
+.navbar{
+    height: 60px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.navbar .logo{
+    float: left;
+    line-height: 60px;
+    
+}
+.navbar .logo img{
+    height: 40px;
+    vertical-align: middle;
+}
+
+.navbar .menu{
+    float: right;
+    list-style: none;
+    
+}
+.navbar .menu li{
+    float: left;
+    margin-left: 40px;
+    line-height: 60px;
+}
+.navbar .menu img{
+    height: 24px;
+    vertical-align: middle;
+}
+.navbar .menu a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.navbar .menu .dark{
+    color: #424242;
+    font-weight: 700;
+    
+}
+.navbar .menu .light{
+    color: #9e9e9e;
+}
+.navbar .menu a:hover{
+    color: #424242;
+}
+/* 배너 */
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url(https://i.postimg.cc/NG6CFwhy/mika-baumeister-dowajkn-GKn-E-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 설명 */
+.intro{
+    width: 1200px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.intro .text{
+    text-align: center;
+}
+.text h2{
+    color: #424242;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+.text img{
+    height: 80px;
+    margin-bottom: 40px;
+}
+.text p{
+    color: #616161;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    margin-bottom: 80px;
+}
+/* 팔레트사진 */
+.palette p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom: 8px;
+}
+.palette .palette-box{
+    width: 273px;
+    height: 294px;
+    float: left;
+}
+.palette-box:not(:last-child){
+    margin-right: 36px;
+}
+.palette-img img{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.palette-img{
+    position: relative;
+}
+.main-img{
+    position: absolute;
+    top: 60px;
+    left: 73px;
+}
+.intro .intro-clearfix{
+    clear: both;
+}
+.sub-img:hover{
+    transform: translate(5px, 5px);
+}
+.sub-img{
+    transition: 1s;
+}
+.main-img:hover{
+    transform: translate(-5px, -5px);
+}
+.main-img{
+    transition: 1s;
+}
+
+
+/* 진단 */
+.jindan{
+    width: 1200px;
+    
+}
+.jin-text{
+    text-align: center;
+}
+.jin-text h2{
+    font-size: 24px;
+    color: #424242;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.jin-text a{
+    text-decoration: none;
+    background-color: #E74F56;
+    font-size: 24px;
+    color: white;
+    border: none;
+    display: block;
+    width: 376px;
+    height: 50px;
+    border-radius: 50px;
+    line-height: 50px;
+}
+.jin-text p{
+    font-size: 16px;
+    color: #616161;
+    margin-top: 40px;
+}
+.viewbox img{
+    width: 376px;
+    height: 250px;
+}
+
+.viewbox a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 14px;
+    
+}
+.viewbox p{
+    margin-top: 8px;
+}
+.viewbox:not(:nth-child(2n)){
+    margin-right: 36px;
+}
+.productview{
+    width: 788px;
+    margin-top: 40px;
+}
+.viewbox{
+    float: left;
+    margin-bottom: 32px;
+    display: block;
+    
+}
+
+
+/* 베스트셀러 */
+.best{
+    width: 1200px;
+    margin-top: 48px;
+}
+.best h2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom: 32px;
+}
+.best h2::after{
+    content: "";
+    display: block;
+    width: 70px;
+    border-bottom: 2px solid #E74F56;
+    margin: 16px auto;
+}
+.bestproduct img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 12px;
+}
+.bestproduct{
+    text-align: center;
+    width: 376px;
+    float: left;
+    position: relative;
+    margin-bottom: 80px;
+    transition: 1s;
+}
+.bestproduct:hover{
+    transform: scale(1.1);
+}
+.bestproduct:not(:last-child){
+    margin-right: 36px;
+}
+.bestproduct a{
+    text-decoration: none;
+    color: #424242;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.bestproduct .brand{
+    margin-bottom: 4px;
+}
+.bestproduct .name{
+    margin-bottom: 8px;
+}
+.bestproductbox{
+    position: relative;
+}
+.bestproductbox .back{
+    position: absolute;
+    margin-top: 174px;
+}
+.bestproductbox .back img{
+    width: 24px;
+}
+.bestproductbox .front{
+    position: absolute;
+    margin-top: 174px;
+    margin-left: 1176px;
+}
+.bestproductbox .front img{
+    width: 24px;
+}
+/* 보러가기 */
+.box{
+    width: 1200px;
+    
+}
+.contentbox img{
+    width: 582px;
+    height: 300px;
+    position: relative;
+    opacity: 100%;   
+    transition: 1s;
+    
+}
+.contentbox img:hover{
+    opacity: 70%;
+    transform: scale(1.1);
+}
+.contentbox{
+    width: 582px;
+    height: 300px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.contentbox:not(:last-child){
+    margin-right: 36px;
+}
+.contentbox a{
+    text-decoration: none;
+    color: #424242;
+}
+
+.contentbox h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.contentbox p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 160%;
+}
+.contentbox .con-text{
+    position: absolute;
+    bottom: 24px;
+    left: 24px;  
+}
+
+/* 서비스 */
+.service{
+    width: 1200px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.servicebox img{
+    width: 100px;
+}
+
+.servicebox{
+    text-align: center;
+    float: left;
+    margin: 0;
+}
+.servicebox:not(:last-child){
+    padding-right: 80px;
+}
+.servicebox h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: #E74F56;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.servicebox p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #616161;
+    line-height: 180%;
+}
+/* 푸터 */
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #eeeeee;
+    margin-top: 80px;
+    text-align: center;
+}
+.sns a img{
+    width: 30px;
+    height: 30px;
+}
+.sns{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.sns a:not(:last-child){
+    margin-right: 30px;
+}
+
+.footertext a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 14px;
+    
+}
+.footertext{
+    margin-bottom: 16px;
+    text-align: center;
+}
+.footertext a:not(:last-child)::after{
+    content: 'ㅣ';
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.footer p{
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+}
+.footercont{
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer .helperr{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}

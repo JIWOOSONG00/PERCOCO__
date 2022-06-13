@@ -1,0 +1,463 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body{
+    font-family: 'Nanum Gothic', sans-serif;   
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 상단바 */
+.navbar{
+    height: 60px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.navbar .logo{
+    float: left;
+    line-height: 60px;
+    
+}
+.navbar .logo img{
+    height: 40px;
+    vertical-align: middle;
+}
+
+.navbar .menu{
+    float: right;
+    list-style: none;
+    
+}
+.navbar .menu li{
+    float: left;
+    margin-left: 40px;
+    line-height: 60px;
+}
+.navbar .menu img{
+    height: 24px;
+    vertical-align: middle;
+}
+.navbar .menu a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.navbar .menu .dark{
+    color: #424242;
+    font-weight: 700;
+    
+}
+.navbar .menu .light{
+    color: #9e9e9e;
+}
+.navbar .menu a:hover{
+    color: #424242;
+}
+/* 상품사진모음 */
+.photo{
+    width: 582px;
+    height: 623px;
+    float: left;
+    text-align: center;
+}
+.mainimg img{
+    width: 350px;
+    height: 350px;
+    margin-bottom: 32px;
+}
+.subimg img{
+    width: 150px;
+    height: 150px;
+}
+.subimg a{
+    transition: 1s;
+    opacity: 80%;
+}
+.subimg a:not(:last-child){
+    margin-right: 36px;
+}
+.subimg a:hover{
+    opacity: 100%;
+}
+.photobox{
+    display: inline-block;
+    vertical-align: middle;
+}
+.photo .helper{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+/* 상품구매 */
+.productbuy{
+    width: 582px;
+    height: 623px;
+    margin-left: 36px;
+    float: left;
+    
+}
+.buytext{
+    margin-left: 40px;
+}
+
+.buybuy{
+    margin-top: 80px;
+    width: 1200px;
+    height: 623px;
+}
+.brandname{
+    font-size: 16px;
+    font-weight: 400;
+    color: #616161;
+    margin-bottom: 16px;
+}
+.productname{
+    font-size: 26px;
+    font-weight: 400;
+    color: #424242;
+    margin-bottom: 16px;
+    line-height: 150%;
+}
+.pricee{
+    font-size: 26px;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom: 32px;
+}
+.baesong{
+    font-size: 16px;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom: 16px;
+}
+.bae{
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    color: #616161;
+    margin-right: 16px;
+}
+.song{
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: #616161;
+}
+.baesongtext{
+    margin-bottom: 24px;
+}
+.benefit{
+    font-size: 16px;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom: 16px;
+}
+.samsung{
+    font-size: 14px;
+    font-weight: 400;
+    color: #616161;
+    margin-bottom: 8px;
+}
+.point{
+    font-size: 14px;
+    font-weight: 400;
+    color: #616161;
+    margin-bottom: 16px;
+}
+.su1{
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: #616161;
+    margin-right: 40px;
+}
+.su2{
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: #616161;
+    margin-bottom: 32px;
+}
+.hap1{
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    color: #424242;
+    margin-right: 315px;
+}
+.hap2{
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom: 32px;
+}
+.but a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+.but .jang{
+    border: 2px solid #E74F56;
+    padding: 24px 59px;
+    color: #E74F56;
+    transition: .5s;
+    border-radius: 5px;
+    float: left;
+    margin-right: 16px;
+}
+
+.but .gobuy{
+    border: 2px solid #E74F56;
+    background-color: #E74F56;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+    padding: 24px 59px;
+    float: left;
+    margin-right: 16px;
+}
+
+.but .heart{
+    border: 2px solid #E74F56;
+    float: left;
+    border-radius: 5px;
+}
+.heart img{
+    width: 65px;
+    height: 65px;
+}
+.buytext{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.productbuy .helperrr{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+/* 상품설명 */
+.explain h2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom: 32px;
+    margin-top: 80px;
+}
+.explain h2::after{
+    content: "";
+    display: block;
+    width: 70px;
+    border-bottom: 2px solid #E74F56;
+    margin: 16px auto;
+}
+/* 상품설명 사진.글들 */
+.explainbox{
+    width: 1200px;
+}
+.explainbox .box1{
+    width: 1200px;
+    height: 675px;
+    background-image: url("https://i.postimg.cc/VNJ0Mm2b/image.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+}
+.explainbox .box2{
+    width: 400px;
+    height: 400px;
+    float: left;
+    background-image: url("https://i.postimg.cc/RFM3VgM0/1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.explainbox .box3{
+    width: 400px;
+    height: 400px;
+    float: left;
+    background-image: url("https://i.postimg.cc/zvZcgHc3/A00000014501512ko.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.explainbox .box4{
+    width: 400px;
+    height: 400px;
+    float: left;
+    background-color: #d9dde8;
+    
+}
+.box4 h3{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    color: #424242;
+    margin-bottom: 16px;
+    margin-top: 135px;
+
+}
+.box4 h3::after{
+    content: "";
+    display: block;
+    width: 265px;
+    border-bottom: 2px solid #E74F56;
+    margin-top: 16px;
+    margin-left: 103px;
+    
+}
+.box4 p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 180%;
+    color: #616161;  
+}
+.box4text{
+    margin-right: 32px;
+}
+
+.explainbox .box5{
+    width: 500px;
+    height: 450px;
+    background-color: #F6F2F3;
+    float: left;
+}
+.box5 h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom: 16px;
+    margin-top: 160px;
+}
+.box5 h3::after{
+    content: "";
+    display: block;
+    width: 315px;
+    border-bottom: 2px solid #E74F56;
+    margin-top: 16px;
+}
+.box5 p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%;
+    color: #616161;  
+}
+.box5text{
+    margin-left: 40px;
+}
+.explainbox .box6{
+    width: 700px;
+    height: 450px;
+    float: left;
+    background-image: url("https://i.postimg.cc/cHQHMHh6/3.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* 추천상품 */
+.productcont{
+    text-align: center;
+    width: 273px;
+    float: left;
+    margin-bottom: 80px;
+    transition: 1s;
+}
+.productcont:hover{
+    transform: scale(1.1);
+}
+.productcont img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 12px;
+}
+.productcont:not(:nth-child(4n)){
+    margin-right: 36px;
+}
+.productcont a{
+    text-decoration: none;
+    color: #424242;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.productcont .brand{
+    margin-bottom: 4px;
+}
+.productcont .name{
+    margin-bottom: 8px;
+}
+.product{
+    width: 1200px;
+    margin-top: 80px;
+}
+.product h2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom: 32px;
+}
+.product h2::after{
+    content: "";
+    display: block;
+    width: 70px;
+    border-bottom: 2px solid #E74F56;
+    margin: 16px auto;
+}
+/* 푸터 */
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+.sns a img{
+    width: 30px;
+    height: 30px;
+}
+.sns{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.sns a:not(:last-child){
+    margin-right: 30px;
+}
+
+.footertext a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 14px;
+    
+}
+.footertext{
+    margin-bottom: 16px;
+    text-align: center;
+}
+.footertext a:not(:last-child)::after{
+    content: 'ㅣ';
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.footer p{
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+}
+.footercont{
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer .helperr{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
